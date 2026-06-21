@@ -29,9 +29,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: dtolnay/rust-toolchain@stable
+      - uses: dtolnay/rust-toolchain@v1
         with:
           toolchain: nightly-2024-06-01
+          components: rustfmt, clippy
 
       - name: Cache Rust
         uses: actions/cache@v4
@@ -44,6 +45,7 @@ jobs:
 
       - name: Build mm2_xfg
         run: |
+          rustup override set nightly-2024-06-01
           cargo build --release -p mm2_main
           cp target/release/mm2_main mm2_xfg
 
@@ -150,9 +152,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: dtolnay/rust-toolchain@stable
+      - uses: dtolnay/rust-toolchain@v1
         with:
           toolchain: nightly-2024-06-01
+          components: rustfmt, clippy
 
       - name: Cache Rust
         uses: actions/cache@v4
@@ -164,4 +167,6 @@ jobs:
           key: mm2-${{ runner.os }}-${{ hashFiles('Cargo.lock') }}
 
       - name: Run fuego_adaptor tests
-        run: cargo test -p fuego_adaptor
+        run: |
+          rustup override set nightly-2024-06-01
+          cargo test -p fuego_adaptor
