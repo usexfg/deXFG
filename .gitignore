@@ -1,3 +1,6 @@
+# macOS
+.DS_Store
+
 # C++ objects and libs
 *.slo
 *.lo
@@ -54,3 +57,11 @@ compile_commands.json
 *creator.user*
 
 *_qmlcache.qrc
+
+# Rust
+/target/
+**/*.rs.bk
+*.pdb
+
+# vcpkg artifacts
+**/vcpkg_installed/

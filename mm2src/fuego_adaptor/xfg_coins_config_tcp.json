@@ -1,0 +1,45 @@
+{
+  "XFG": {
+    "coin": "XFG",
+    "type": "UTXO",
+    "name": "Fuego",
+    "fname": "Fuego",
+    "coinpaprika_id": "xfg-fuego",
+    "coingecko_id": "fuego",
+    "livecoinwatch_id": "XFG",
+    "explorer_url": "https://explorer.usexfg.org/",
+    "explorer_tx_url": "tx/",
+    "explorer_address_url": "address/",
+    "explorer_block_url": "block/",
+    "isPoS": 0,
+    "sign_message_prefix": "Fuego Signed Message:\n",
+    "rpcport": 18180,
+    "pubtype": 25,
+    "p2shtype": 85,
+    "wiftype": 153,
+    "txfee": 8000,
+    "dust": 1000,
+    "mm2": 1,
+    "mature_confirmations": 30,
+    "required_confirmations": 6,
+    "avg_blocktime": 480,
+    "protocol": {
+      "type": "UTXO"
+    },
+    "derivation_path": "m/44'/9797'",
+    "trezor_coin": "Fuego",
+    "links": {
+      "github": "https://github.com/usexfg/fuego-suite",
+      "homepage": "https://usexfg.org"
+    },
+    "electrum": [],
+    "explorer_tx_url": "tx/",
+    "explorer_address_url": "address/",
+    "explorer_block_url": "block/",
+    "active": false,
+    "is_testnet": false,
+    "currently_enabled": false,
+    "wallet_only": false,
+    "supported": []
+  }
+}

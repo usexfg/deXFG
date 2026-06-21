@@ -1,0 +1,26 @@
+{
+    "coin": "XFG",
+    "name": "Fuego",
+    "fname": "fuego",
+    "sign_message_prefix": "Fuego Signed Message:\n",
+    "isPoS": 0,
+    "rpcport": 18180,
+    "pubtype": 25,
+    "p2shtype": 85,
+    "wiftype": 153,
+    "txfee": 8000,
+    "dust": 1000,
+    "mm2": 1,
+    "mature_confirmations": 10,
+    "required_confirmations": 6,
+    "avg_blocktime": 480,
+    "protocol": {
+        "type": "UTXO"
+    },
+    "derivation_path": "m/44'/9797'",
+    "trezor_coin": "Fuego",
+    "links": {
+        "github": "https://github.com/usexfg/fuego-suite",
+        "homepage": "https://usexfg.org"
+    }
+}
