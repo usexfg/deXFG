@@ -9,11 +9,11 @@
     "p2shtype": 85,
     "wiftype": 153,
     "txfee": 8000,
-    "dust": 1000,
+    "dust": 8000,
     "mm2": 1,
-    "mature_confirmations": 10,
+    "mature_confirmations": 60,
     "required_confirmations": 6,
-    "avg_blocktime": 480,
+    "avg_blocktime": 120,
     "protocol": {
         "type": "UTXO"
     },
