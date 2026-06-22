@@ -103,7 +103,8 @@ jobs:
       - name: Install vcpkg deps
         working-directory: swapxfgui
         run: |
-          ./ci_tools_atomic_dex/vcpkg-repo/vcpkg install --triplet x64-linux
+          ./ci_tools_atomic_dex/vcpkg-repo/vcpkg install --triplet x64-linux \
+            --overlay-ports=ci_tools_atomic_dex/vcpkg-custom-ports/ports
 
       - name: Patch mm2 binary
         run: |
