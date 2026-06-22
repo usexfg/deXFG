@@ -93,7 +93,8 @@ jobs:
             libqt5svg5-dev libqt5charts5-dev \
             qt5-qmake qtwebengine5-dev-tools \
             qttools5-dev qttools5-dev-tools \
-            libgl1-mesa-dev libxkbcommon-dev
+            libgl1-mesa-dev libxkbcommon-dev \
+            autoconf autoconf-archive automake libtool
 
       - name: Bootstrap vcpkg
         working-directory: swapxfgui/ci_tools_atomic_dex/vcpkg-repo
