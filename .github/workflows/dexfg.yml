@@ -94,6 +94,7 @@ jobs:
             qt5-qmake qtwebengine5-dev-tools \
             qttools5-dev qttools5-dev-tools \
             libgl1-mesa-dev libxkbcommon-dev \
+            qtquickcontrols2-5-dev \
             autoconf autoconf-archive automake libtool
 
       - name: Bootstrap vcpkg
